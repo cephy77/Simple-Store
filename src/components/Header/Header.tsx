@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { colors, viewport } from "../../styles/Variables";
+import menu from "../../assets/menu.png";
+import cart from "../../assets/cart.png";
 
 const HeaderWrapper = styled.header`
   height: 40px;
@@ -21,7 +23,11 @@ const InnerHeader = styled.nav`
 const Menu = styled.div`
   height: 40px;
   width: 40px;
-  background-color: ${colors.dark};
+  & img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+  }
 `;
 const Logo = styled.div`
   display: flex;
@@ -31,16 +37,24 @@ const Logo = styled.div`
 const Cart = styled.div`
   height: 40px;
   width: 40px;
-  background-color: ${colors.dark};
+  & img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 function Header() {
   return (
     <HeaderWrapper>
       <InnerHeader>
-        <Menu />
-        <Logo>Coffe Bean</Logo>
-        <Cart />
+        <Menu>
+          <img src={menu} alt="menu icon" />
+        </Menu>
+        <Logo>CoBean</Logo>
+        <Cart>
+          <img src={cart} alt="cart icon" />
+        </Cart>
       </InnerHeader>
     </HeaderWrapper>
   );
