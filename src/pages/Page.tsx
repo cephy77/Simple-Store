@@ -14,7 +14,7 @@ const ContentWrapper = styled.div`
   width: 100%;
   height: calc(100vh - 50px);
   padding-top: 10px;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
 `;
 const Content = styled.main`
   margin: 0 auto;

@@ -9,7 +9,7 @@ const MarketWrapper = styled.div`
   padding: 20px;
   margin: 0 auto;
   border-radius: 7px;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 `;
 
 function MarketPlace() {
